@@ -5,5 +5,4 @@ int main(void)
 {
     string answer = get_string ("what your name?: ");
     printf("Hello, %s\n", answer);
-    if ()
 }
