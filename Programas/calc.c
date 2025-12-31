@@ -17,7 +17,7 @@ int main(void)
     float result = 0;
     int cont = 0;
 
-    while (cont != 1)
+    while (cont != 0)
     {
         // Pede para selecionar a operação desejada
         printf("--------------------------------------------------------------------------------------------\n");
@@ -51,51 +51,42 @@ int main(void)
         }
 
         // Verifica qual operação escolhida e faz o calculo com base na operação escolhida
-        //  Adição
-        if (op == 1)
+        switch(op)
         {
-            result = v1 + v2;
-            printf("O resultado da adição de %f mais %f é %f\n", v1, v2, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
-        }
-        // Subtração
-        else if (op == 2)
-        {
-            result = v1 - v2;
-            printf("O resultado da subtração de %f menos %f é %f\n", v1, v2, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
-        }
-        // Multiplicação
-        else if (op == 3)
-        {
-            result = v1 * v2;
-            printf("O resultado da multiplicação de %f vezes %f é %f\n", v1, v2, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
-        }
-        // Divisão
-        else if (op == 4)
-        {
-            result = v1 / v2;
-            printf("O resultado da divisão de %f por %f é %f\n", v1, v2, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
-        }
-        else if (op == 5)
-        {
-            result = pow(b, e_i);
-            printf("O resultado da potencia de %lf elevado a %lf é %lf\n", b, e_i, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
-        }
-        else
-        {
-            result = pow(b, 1.0 / e_i);
-            printf("O resultado da raiz de %lf com indice de %lf é de %lf\n", b, e_i, result);
-            cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+            case 1:
+                result = v1 + v2;
+                printf("O resultado da adição de %f mais %f é igual a %f\n", v1, v2, result);
+                cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+                break;
+            case 2:
+                result = v1 - v2;
+                printf("O resultado da subtração de %f menos %f é igual a %f\n", v1, v2, result);
+                cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+                break;
+            case 3:
+                result = v1 * v2;
+                printf("O resultado da multiplicação de %f vezes %f é igual a %f\n", v1, v2, result);
+                cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+                break;
+            case 4:
+                result = v1 / v2;
+                printf("O resultado da divisão de %f por %f é igual a %f\n", v1, v2, result);
+                cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+                break;
+            case 5:
+                result = pow(b, e_i);
+                printf("O resultado da potencia de %lf elevado a %lf é %lf\n", b, e_i, result);
+                cont = get_int("Deseja continuar? [0 = yes] [1 = no]: ");
+                break;
+            case 6:
+                result = pow(b, 1.0 / e_i);
+                printf("O resultado da raiz de %lf com indice de %lf é de %lf\n", b, e_i, result);
+                cont = get_int("Deseja continuar? [1 = yes] [0 = no]: ");
+                break;
+
         }
     }
-    if (cont == 1)
-    {
-        printf("-----------------------------Obrigado por usar a calculadora--------------------------------------------------\n");
-    }
-    // Finaliza o codigo
+        // Finaliza o codigo
+    printf("----------------------------- Obrigado por usar a calculadora -------------------------------\n");
     return 0;
 }
