@@ -1,0 +1,3 @@
+Exercicio 2 dos fundamentos operacionais
+
+Converter temperatura de Celsius para Fahrenheit.

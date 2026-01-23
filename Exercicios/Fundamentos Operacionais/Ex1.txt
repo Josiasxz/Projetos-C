@@ -1,3 +1,3 @@
 Exercicio de fundamentos operacionais 1:
 
-Ler dois números inteiros e imprimir a soma, subtração, multiplicação e divisão.
+Ler duas variaveis float e imprimir a soma, subtração, multiplicação e divisão.
