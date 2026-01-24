@@ -1,3 +1,15 @@
 Exercicio 2 dos fundamentos operacionais
 
-Converter temperatura de Celsius para Fahrenheit.
+ -- O que precisa saber?
+
+ 1. Comandos basicos
+ 2. Variaveis e tipos de dados (int, float, char...)
+ 3. Operadores
+
+ -- Formula:
+  
+  (Fahrenheit = (Celsius * 1,8) + 32)
+
+-- O que fazer?
+
+Converter temperatura de Celsius para Fahrenheit e exibir o resultado no terminal com `printf()`.
