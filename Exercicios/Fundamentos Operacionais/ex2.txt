@@ -1,4 +1,4 @@
-Exercicio 2 dos fundamentos operacionais
+# Exercicio 2 dos fundamentos operacionais
 
  -- O que precisa saber?
 

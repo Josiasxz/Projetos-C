@@ -1,0 +1,1 @@
+Exercicio 3 dos fundamentos operacionais em C:
