@@ -1,1 +1,16 @@
-Exercicio 3 dos fundamentos operacionais em C:
+Exercicio 3 dos fundamentos operacionais em C: Par ou Impar
+
+ -- O que precisa saber?
+
+ 1. Comandos basicos.
+ 2. Variaveis e tipos de dados (int, float, char...).
+ 3. Operadores (Principalmente o operador de modulo).
+ 4. Condicionais (if, else)
+
+ -- O que fazer?
+
+ Receba um valor e imprima no terminal se esse valor é par ou impar.
+
+ -- Bibliotecas necessarias
+
+Somente <stdio.h>

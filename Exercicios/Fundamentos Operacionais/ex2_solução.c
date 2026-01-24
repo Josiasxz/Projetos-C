@@ -1,4 +1,4 @@
-// Correção do exercicio 2, transformar celsius em fahrenheit:
+// Correção do exercicio 2 - Conversão de temperatura - "Qualquer erro contido no codigo me avise, sou iniciante como você."
 
 #include <stdio.h>
 

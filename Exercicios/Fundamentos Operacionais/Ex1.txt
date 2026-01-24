@@ -1,11 +1,15 @@
-Exercicio de fundamentos operacionais 1:
+Exercicio de fundamentos operacionais 1: Operações basicas
  
- - O que precisa saber?
+ -- O que precisa saber?
 
  1. Comandos basicos.
  2. Variaveis e tipos de dados (int, float, char...).
  3. Operadores e como usa-los.
 
-- O que fazer?
+-- O que fazer?
 
 Ler duas variaveis float e imprimir a soma, subtração, multiplicação e divisão no terminal dos dois valores.
+
+-- Bibliotecas necessarias
+
+Somente <stdio.h>

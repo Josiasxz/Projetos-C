@@ -1,4 +1,4 @@
-# Exercicio 2 dos fundamentos operacionais
+Exercicio 2 dos fundamentos operacionais: Conversor de temperatura
 
  -- O que precisa saber?
 
@@ -13,3 +13,7 @@
 -- O que fazer?
 
 Converter temperatura de Celsius para Fahrenheit e exibir o resultado no terminal com `printf()`.
+
+-- Bibliotecas necessarias
+
+Somente <stdio.h>

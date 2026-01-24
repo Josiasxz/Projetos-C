@@ -1,4 +1,4 @@
-// CorreÁ„o Exercicio de fundamentos operacionais numero 1!
+// Corre√ß√£o Exercicio 2 - Operadores basicos - "Qualquer erro contido no codigo me avise, sou iniciante como voc√™."
 
 #include <stdio.h>
 
@@ -7,7 +7,7 @@ int main(void)
     float numero_1 = 6;
     float numero_2 = 4;
 
-    // N„o precisa conter isso, mas fica mais completo com
+    // N√£o precisa conter isso, mas fica mais completo tendo
     if (numero_1 == 0 && numero_2 == 0)
     {
         printf("Insira um valor valido!");
@@ -15,11 +15,11 @@ int main(void)
     }
 
     printf("A soma entre os dois valores e: %f\n", numero_1 + numero_2);
-    printf("A subtraÁ„o entre os dois valores e: %f\n", numero_1 - numero_2);
-    printf("A multiplicaÁ„o entre os dois valores e: %f\n", numero_1 * numero_2);
-    printf("A divis„o entre os dois valores e: %f\n", numero_1 / numero_2);
+    printf("A subtra√ß√£o entre os dois valores e: %f\n", numero_1 - numero_2);
+    printf("A multiplica√ß√£o entre os dois valores e: %f\n", numero_1 * numero_2);
+    printf("A divis√£o entre os dois valores e: %f\n", numero_1 / numero_2);
 
-    // H· outras formas de fazer isso, umas mais complexas e outras mais simples, mas se o resultado final n„o contem erro, pode considerar feito, vou incluir abaixo uma forma que eu mesmo faria isso a um tempo atras
+    // H√° outras formas de fazer isso, umas mais complexas e outras mais simples, mas se o resultado final n√£o contem erro, pode considerar feito, vou incluir abaixo uma forma que eu mesmo faria isso a um tempo atras
 
     float soma = numero_1 + numero_2;
     float subtracao = numero_1 - numero_2;
@@ -31,9 +31,9 @@ int main(void)
     printf("\n");
 
     printf("A soma entre os dois valores e: %f\n", soma);
-    printf("A subtraÁ„o entre os dois valores e: %f\n", subtracao);
-    printf("A multiplicaÁ„o entre os dois valores e: %f\n", multiplicacao);
-    printf("A divis„o entre os dois valores e: %f\n", divisao);
+    printf("A subtra√ß√£o entre os dois valores e: %f\n", subtracao);
+    printf("A multiplica√ß√£o entre os dois valores e: %f\n", multiplicacao);
+    printf("A divis√£o entre os dois valores e: %f\n", divisao);
 
     return 0;
 }
