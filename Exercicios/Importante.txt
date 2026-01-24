@@ -1,0 +1,11 @@
+Olá! Seja bem-vindo(a) a esta pasta de exercícios em C.
+
+Este material faz parte da minha evolução na programação. Já superei a fase inicial da linguagem C e hoje estou trabalhando conceitos mais estruturados, especialmente lógica de programação, manipulação de strings e análise de texto.
+
+Os exercícios aqui vão des dos introdutórios básicos, mas também não têm a pretensão de serem avançados. Eles refletem desafios reais que enfrentei ao consolidar fundamentos importantes da linguagem, e que podem ser extremamente úteis para quem já passou do “hello world” e quer ganhar mais domínio prático.
+
+Este repositório está em constante evolução, assim como meu aprendizado. Melhorias, refatorações e novos exercícios podem surgir conforme aprofundo meus estudos.
+
+A ideia é compartilhar conhecimento de forma prática, clara e progressiva, ajudando outros estudantes a fortalecerem sua base em C e lógica de programação.
+
+Bons estudos e bom código!
