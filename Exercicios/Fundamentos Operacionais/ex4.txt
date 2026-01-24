@@ -1,0 +1,16 @@
+Exercicio 4 dos fundamentos operacionais em C: Positivo, negativo ou zero?
+
+ -- O que precisa saber?
+
+ 1. Comandos basicos.
+ 2. Variaveis e tipos de dados (int, float, char...).
+ 3. Operadores (Principalmente o operador de modulo).
+ 4. Condicionais (if, else e else if)
+
+ -- O que fazer?
+
+ Receba um valor e verifique se o numero é negativo, positivo ou zero
+
+-- Bibliotecas necessarias
+
+ Somente <stdio.h>

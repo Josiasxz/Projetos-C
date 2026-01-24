@@ -5,7 +5,7 @@ Exercicio 3 dos fundamentos operacionais em C: Par ou Impar
  1. Comandos basicos.
  2. Variaveis e tipos de dados (int, float, char...).
  3. Operadores (Principalmente o operador de modulo).
- 4. Condicionais (if, else)
+ 4. Condicionais (if e else)
 
  -- O que fazer?
 
@@ -13,4 +13,4 @@ Exercicio 3 dos fundamentos operacionais em C: Par ou Impar
 
  -- Bibliotecas necessarias
 
-Somente <stdio.h>
+ Somente <stdio.h>
