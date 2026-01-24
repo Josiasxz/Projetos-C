@@ -1,0 +1,16 @@
+Exercicio 5 dos fundamendos operacionais em C: Maior de idade?
+
+ -- O que precisa saber
+ 
+ 1. Comandos basicos.
+ 2. Variaveis e tipos de dados (int, float, char...).
+ 3. Operadores.
+ 4. Condicionais (if, else e else if)
+
+ -- O que fazer?
+
+ Receba uma variavel de idade e retorne é maior de 18 anos, ou se é menor de idade. E faça uma verificação que não deixe a idade ser negativa
+
+ -- Bibliotecas necessarias
+
+ Somente <stdio.h>
