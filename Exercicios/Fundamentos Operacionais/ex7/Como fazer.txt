@@ -1,0 +1,16 @@
+Exercicio 7 dos fundamentos operacionais em C: Contando numeros
+
+-- O que precisa saber?
+ 1. Comandos basicos.
+ 2. Variaveis e tipos de dados (int, float, char...).
+ 3. Operadores.
+ 4. Condicionais (if, else e else if)
+ 5. Loops
+
+ -- O que fazer?
+
+ Crie um algoritimo que imprima os numeros de 1 até 100 usando loop while
+
+ -- Bibliotecas necessarias
+
+ Somente <stdio.h>

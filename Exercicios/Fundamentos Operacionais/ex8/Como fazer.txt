@@ -1,0 +1,21 @@
+Exercicio 8 dos fundamentos operacionais em C: Calcule o fatorial
+
+-- O que precisa saber?
+ 1. Comandos basicos.
+ 2. Variaveis e tipos de dados (int, float, char...).
+ 3. Operadores.
+ 4. Condicionais (if, else e else if)
+ 5. Loops
+
+ -- O que fazer?
+
+ Crie um algoritimo que calcula o fatorial de um numero com um loop for, e imprime o resultado no terminal.
+ O algoritimo não deve aceitar numeros negativos como entrada
+
+ -- Formula
+
+ (n! = n * (n-1) * (n-2) * ... * 3 * 2 * 1)
+
+ -- Bibliotecas necessarias
+
+ Somente <stdio.h>
