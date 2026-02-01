@@ -1,20 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    
-    // Mapa
-    for (int colum = 0; colum < 10; colum++)
-    {
-        if (colum == 0 || colum == 9)
-        {
-            printf("###############################################################\n");
-        }
-        else
-        {
-            printf("#                                                             #\n");
-        }
-    }
+    char *text;
+
+    printf("Digite um texto: ");
+    scanf("%s", text);
+
+    printf("%s", text);
 
     return 0;
 }
