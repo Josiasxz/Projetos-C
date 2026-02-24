@@ -2,7 +2,7 @@ Fundamentos operacionais: Exercicio 2 - Soma
 
  -- O que precisa saber?
 
- 1. Tudo do exercicio anterios
+ 1. Tudo do exercicio anterior
  2. scanf()
  3. Operador (+)
 

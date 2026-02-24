@@ -2,7 +2,7 @@ Fundamentos operacionais: Exercicio 3 - Operações basicas
 
  -- O que precisa saber?
 
- 1. Tudo do exercicio anterios
+ 1. Tudo do exercicio anterior
  2. scanf()
  3. Operadores (+, -, *, /, %)
  4. Formatação
@@ -13,7 +13,7 @@ Fundamentos operacionais: Exercicio 3 - Operações basicas
 
 -- O que fazer?
 
-Leia 2 floats e mostre todas as operações (+, -, *, /, %)
+Leia 2 int's e mostre todas as operações deles (+, -, *, /, %)
 
 -- Formula
 

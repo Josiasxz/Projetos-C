@@ -1,16 +1,14 @@
-Exercicio 5 dos fundamendos operacionais em C: Maior de idade?
+Fundamentos operacionais: Exercicio 5 - Media de 3 notas
 
- -- O que precisa saber
- 
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores.
- 4. Condicionais (if, else e else if)
+ -- O que precisa saber?
+
+ 1. Tudo do exercicio anterior
+ 2. Divisão com float
 
  -- O que fazer?
 
- Receba uma variavel de idade e retorne é maior de 18 anos, ou se é menor de idade. E faça uma verificação que não deixe a idade ser negativa
+ Usando o tipo de dado "float" peça para o usuario inserir o valor de 3 notas, e depois calcule a media entre essas notas e imprima elas para o usuario.
 
- -- Bibliotecas necessarias
+ -- Formula:
 
- Somente <stdio.h>
+    média = (n1+n2+n3)/3

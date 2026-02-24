@@ -1,27 +1,24 @@
-// Solução do exercicio 5 - Maior de 18 anos? - "Qualquer erro contido no codigo me avise, sou iniciante como você."
+// Correção do exercicio 5 - Media de 3 notas - "Qualquer erro contido no codigo me avise, sou iniciante como você."
 
 #include <stdio.h>
 
 int main (void)
 {
-    // Variavel da idade
-    int idade = 0;
+    float Nota1;
+    printf("Insira a primeira nota: ");
+    scanf("%f", &Nota1);
 
-    // Verificação
-    if (idade < 0) // -- Se for menor que 0
-    {
-        printf("Digite uma idade valida"); 
-        return 1; // Retorna um erro
-    }
+    float Nota2;
+    printf("Insira a segunda nota: ");
+    scanf("%f", &Nota2);
 
-    if (idade > 18) // Se for maior que 18
-    {
-        printf("É maior de 18 anos");
-    }
-    else // Se não for maior
-    {
-        printf("É maior de 18 anos");
-    }
+    float Nota3;
+    printf("Insira a terceira nota: ");
+    scanf("%f", &Nota3);
+
+    float Media = (Nota1 + Nota2 + Nota3) / 3;
+    printf("A media das notas %.2f, %.2f e %.2f e igual a: %.2f", Nota1, Nota2, Nota3, Media);
 
     return 0;
+
 }

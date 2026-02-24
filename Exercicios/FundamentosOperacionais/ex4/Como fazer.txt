@@ -1,16 +1,14 @@
-Exercicio 4 dos fundamentos operacionais em C: Positivo, negativo ou zero?
+Fundamentos operacionais: Exercicio 4 - Calcule a area de um triangulo
 
  -- O que precisa saber?
 
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores (Principalmente o operador de modulo).
- 4. Condicionais (if, else e else if)
+ 1. Tudo do exercicio anterior
+ 2. float
 
  -- O que fazer?
 
- Receba um valor e verifique se o numero é negativo, positivo ou zero
+ Usando o tipo de dado "float" peça para o usuario inserir o valor da base e da altura do triangulo e calcule a area de um triangulo.
 
--- Bibliotecas necessarias
+ -- Formula:
 
- Somente <stdio.h>
+    área = base * altura
