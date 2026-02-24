@@ -1,0 +1,33 @@
+Primeiro grupo de exercicios: Fundamentos operacionais
+
+-- Foco:
+
+#include <stdio.h>
+
+main()
+
+printf e scanf
+
+Tipos (int, float, double, char)
+
+Operadores aritméticos
+
+Operadores relacionais
+
+switch
+
+-- Você aprende:
+
+Estrutura básica de um programa
+
+Variáveis
+
+Entrada e saída
+
+Operadores aritméticos
+
+if e switch
+
+-- Bibliotecas:
+
+#include <stdio.h>

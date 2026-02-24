@@ -1,16 +1,20 @@
-Exercicio 3 dos fundamentos operacionais em C: Par ou Impar
+Fundamentos operacionais: Exercicio 3 - Operações basicas
 
  -- O que precisa saber?
 
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores (Principalmente o operador de modulo).
- 4. Condicionais (if e else)
+ 1. Tudo do exercicio anterios
+ 2. scanf()
+ 3. Operadores (+, -, *, /, %)
+ 4. Formatação
 
- -- O que fazer?
+ -- Formatação:
+ Para formatar um resultado float use: printf("%.CASAS_DECIMAISf")
+ Exemplo: printf("%.2f") - Formata 2 casas decimais
 
- Receba um valor e imprima no terminal se esse valor é par ou impar.
+-- O que fazer?
 
- -- Bibliotecas necessarias
+Leia 2 floats e mostre todas as operações (+, -, *, /, %)
 
- Somente <stdio.h>
+-- Formula
+
+resto = a % b
