@@ -2,15 +2,8 @@ Exercicio final dos fundamentos operacionais em C: Uma calculadora
 
 -- O que precisa saber?
  
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores.
- 4. Condicionais (if, else e else if)
- 5. Loops
- 6. Operadores logicos
- 6. Scanf()
- 7. switch
-
+ 1. Tudo do exercicio anterior
+ 2. While ou do While
  -- O que fazer?
  
  Crie uma calculadora usando switch. 
@@ -28,26 +21,7 @@ Exercicio final dos fundamentos operacionais em C: Uma calculadora
 
     Imirime o valor final da operação escolhida.
 
- -- Uso do Switch
-
- switch (expressao) {
-  case valor1:
-    // Código a ser executado se expressao == valor1
-    break; // Opcional, mas recomendado
-  case valor2:
-    // Código a ser executado se expressao == valor2
-    break;
-  case valor3:
-    // Código a ser executado se expressao == valor3
-    // Sem break, executa o próximo case (valor4)
-    break;
-  case valor4:
-    // Código a ser executado se expressao == valor4
-    break;
-  default:
-    // Código a ser executado se nenhuma das opções acima for verdadeira
-    break;
-}
+ Deve ter um sistema completo com um menu que aprensenta a opção de saida ou de continuar
 
 -- Bibliotecas necessarias
 

@@ -1,4 +1,4 @@
-// Correção do exercicio 8 - Comparação - "Qualquer erro contido no codigo me avise, sou iniciante como você."
+// Correção do exercicio 9 - Menu Simples - "Qualquer erro contido no codigo me avise, sou iniciante como você."
 
 #include <stdio.h>
 
