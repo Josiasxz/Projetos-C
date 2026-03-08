@@ -41,12 +41,18 @@ int main(void)
             printf("Digite uma opção valida: ");
             scanf("%d", &option);
         }
-        
+
         getchar();
 
         switch (option)
         {
         case 1:
+
+            if (listPosition >= MAX_CONTACTS)
+            {
+                printf("Agenda cheia!");
+                break;
+            }
 
             do
             {
@@ -72,9 +78,28 @@ int main(void)
 
             listPosition++;
             break;
-        
+        case 2:
+
+        printf("%i", listPosition);
+            if (listPosition <= 0)
+            {
+                printf("Não existe contatos.\n");
+            }
+            else
+            {
+
+                for (int c = 0; c < listPosition; c++)
+                {
+
+                    printf("%i - Nome: %s / ", c, personsList[c].name);
+                    printf("Numero: %s\n", c, personsList[c].number);
+                }
+            }
+
+            break;
+
         default:
-            printf("Erro!!!");
+            printf("Essa opção não existe");
             return 1;
             break;
         }

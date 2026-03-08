@@ -1,24 +1,13 @@
-Exercicio 6 dos fundamentos operacionais em C: Media das notas
+Fundamentos operacionais: Exercicio 6 - Celsius para Fahrenheit
 
- -- O que precisa saber
- 
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores.
- 4. Condicionais (if, else e else if)
+ -- O que precisa saber?
+
+ 1. Tudo do exercicio anterior
 
  -- O que fazer?
 
- Calcule a media de 3 valores (notas de um aluno) e retorne a media das notas, informando se o aluno foi aprovado ou não.
+ Usando uma variavel do tipo float, converta uma temperatura em graus Celsius passada pelo usuario para um temperatura em Fahrenheit e imprima ela.
 
- Se a media for maior que 6, aprovado, se for menor que 6, reprovado (Ja respondi parte do exercicio com isso)
+ -- Formula:
 
- Os valores da nota não podem ser negativos
-
- -- Formula
-
- (v1 + v2 + v3...) / quantidade de valores
-
--- Bibliotecas necessarias
-
- Somente <stdio.h>
+    F = C*1.8 + 32

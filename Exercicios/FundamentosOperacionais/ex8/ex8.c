@@ -1,29 +1,26 @@
-// Solução do exercicio 8 - Calcule o fatorial - "Qualquer erro contido no codigo me avise, sou iniciante como você."
+// Correção do exercicio 8 - Comparação - "Qualquer erro contido no codigo me avise, sou iniciante como você."
 
 #include <stdio.h>
 
 int main(void)
 {
-    // Entrada
-    int numero = 5;
-    // Começa em 1 pois 1 é o elemento neutro da matematica (multiplicar por 1 não altera o valor original)
-    int fatorial = 1;
 
-    // Verificação
-    if (numero < 0)
+    int numero1;
+    printf("Digite um numero: ");
+    scanf("%d", &numero1);
+
+    int numero2;
+    printf("Digite o segundo numero: ");
+    scanf("%d", &numero2);
+
+    if (numero1 == numero2)
     {
-        printf("Digite um valor valido!\n");
+        printf("O numero %i e o numero %i sao iguais\n", numero1, numero2);
     }
-    // Realiza o calculo
     else
     {
-        for (int i = numero; i >= 1; i--)
-        {
-                fatorial *= i;
-        }
+        printf("O numero %i e o numero %i nao sao iguais\n", numero1, numero2);
     }
-    
-    printf("O valor do fatorial de %i é: %i\n", numero, fatorial);
 
     return 0;
 }

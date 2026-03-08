@@ -1,16 +1,10 @@
-Exercicio 7 dos fundamentos operacionais em C: Contando numeros
+Fundamentos operacionais: Exercicio 7 - Antecessor e Sucessor
 
--- O que precisa saber?
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores.
- 4. Condicionais (if, else e else if)
- 5. Loops
+ -- O que precisa saber?
+
+ 1. Tudo do exercicio anterior
+ 2. Operadores Simples
 
  -- O que fazer?
 
- Crie um algoritimo que imprima os numeros de 1 até 100 usando loop while
-
- -- Bibliotecas necessarias
-
- Somente <stdio.h>
+ Mostre o numero antecessor e sucessor de um numero passado pelo usuario.

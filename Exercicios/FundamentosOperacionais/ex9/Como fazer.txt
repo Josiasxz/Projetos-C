@@ -1,27 +1,10 @@
-Exercicios 9 dos fundamentos operacionais em C: Um fatorial melhorado
+Fundamentos operacionais: Exercicio 8 - Menu Simples
 
--- O que precisa saber?
- 
- 1. Comandos basicos.
- 2. Variaveis e tipos de dados (int, float, char...).
- 3. Operadores.
- 4. Condicionais (if, else e else if)
- 5. Loops
+ -- O que precisa saber?
+
+ 1. Tudo do exercicio anterior
+ 2. Swich
 
  -- O que fazer?
 
- Recrie o algoritimo de calcular fatorial. Mas dessa vez usando a função scanf() para pedir ao usuario o fatorial que vai ser calculado, enquanto o usuario não digitar um valor valido o programa deve pedir novamente até que o valor correto seja digitado.
- 
- Pode parecer bobo mas vai ser importante saber usar scanf(), e como alocar o valor obtido por ele há uma variavel para o proximo exercicio
-
- --Uso do scanf()
-
- scanf("especificador_formato", &variavel); 
-
- -- Formula
-
- (n! = n * (n-1) * (n-2) * ... * 3 * 2 * 1)
-
- -- Bibliotecas necessarias
-
- Somente <stdio.h>
+ Faça um menu com 4 operações diferentes (+, -, *, /) pedindo dois valores para o usuario e retornando o calculo da operação escolhida.
