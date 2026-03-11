@@ -2,6 +2,8 @@
 
 #define MAX_CHAR 21
 
+void verifyScanf(char dataType, void *variable);
+
 typedef struct
 {
 
@@ -23,16 +25,35 @@ int main(void)
     printf("Bem vindo ao cadastro de jogador\n");
 
     int wantExit = 0;
-    while (!wantExit)
+    int option = 0;
+    while (wantExit != 3)
     {
-        playerData currentData;
 
-        scanf("%19s", &currentData.name);
-        printf("Deseja sair? ");
-        if (scanf("%d", &wantExit) != 1)
+        printf("-------- MENU --------\n");
+        printf("[1] - Adicionar um jogador\n");
+        printf("[2] - Listar todos os jogadores adicionados\n");
+        printf("[3] - Sair\n");
+        printf("----------------------\n");
+
+        while (option < 1 || option > 3)
         {
-            printf("Erro! Entrada invalida\n");
-            return 2;
+            printf("Selecione uma opção: ");
+            verifyScanf('d', &option);
+        }
+
+        switch (option)
+        {
+            case 1:
+
+                playerData currentData;
+
+                printf("Digite um nome para o jogador: \n");
+                
+                break;
+
+            default:
+
+                break;
         }
     }
 
@@ -53,6 +74,14 @@ void verifyScanf(char dataType, void *variable)
 
         break;
 
+    case 'f':
+
+        if (scanf("%f", (float *)variable) != 1)
+        {
+            printf("Erro! Entrada invalida");
+            return 2;
+        }
+
     case 'c':
 
         if (scanf("%c", (char *)variable) != 1)
@@ -65,7 +94,7 @@ void verifyScanf(char dataType, void *variable)
 
     case 's':
 
-        if (scanf("%s", (char *)variable) != 1)
+        if (scanf("%20s", (char *)variable) != 1)
         {
             printf("Erro! Entrada invalida");
             return 2;
