@@ -7,7 +7,7 @@ void verifyScanf(char dataType, void *variable);
 typedef struct
 {
 
-    char *name[21];
+    char name[21];
     int score;
 
 } playerData;
@@ -16,7 +16,9 @@ int main(void)
 {
 
     FILE *data = fopen("data.txt", "w");
-    if (data == NULL)
+    FILE *dataSave = fopen("dataSave.txt", "r");
+
+    if (data == NULL || dataSave == NULL) 
     {
         printf("Não foi possivel abrir o arquivo\n");
         return 1;
@@ -47,7 +49,13 @@ int main(void)
 
                 playerData currentData;
 
-                printf("Digite um nome para o jogador: \n");
+                printf("Digite um nome para o jogador: ");
+                verifyScanf('s', currentData.name);
+
+                printf("Digite a pontuação do jogador: ");
+                verifyScanf('s', &currentData.score);
+
+                fwrite(currentData.name, sizeof(char), 21, data); 
                 
                 break;
 
@@ -60,7 +68,7 @@ int main(void)
     return 0;
 }
 
-void verifyScanf(char dataType, void *variable)
+int verifyScanf(char dataType, void *variable)
 {
     switch (dataType)
     {
@@ -81,6 +89,7 @@ void verifyScanf(char dataType, void *variable)
             printf("Erro! Entrada invalida");
             return 2;
         }
+        break;
 
     case 'c':
 
