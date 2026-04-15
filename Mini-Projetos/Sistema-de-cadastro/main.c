@@ -16,6 +16,7 @@ void showMenu (void);
 bool input (const char *msg, const char *format, void *var);
 bool selectOption (int *option);
 people createPeople (char name[], int age);
+void limparBuffer (void);
 
 int main (void)
 {
@@ -23,25 +24,31 @@ int main (void)
     int peoplesCount = 0;
 
     int option;
-    selectOption(&option);
+    if (selectOption(&option) == false)
+        return INPUT_ERROR;
 
     while (option)
     {
         char namePeople[MAX_CHAR];
         int agePeople;
 
+        int oldestIndex = 0;
+
         switch (option)
         {
             case 1:
 
+                printf("---------- Cadastrar pessoas ----------\n");
                 if (peoplesCount >= 100)
                 {
-                    printf("Não é possivel adicionar mais pessoas!\n");
+                    printf("Não é possivel cadastrar mais pessoas!\n");
                     break;
                 }
 
-                if (input("Digite o nome da pessoa: ", "%s", namePeople) == false)
-                    return INPUT_ERROR;
+                limparBuffer();
+                printf("Digite seu nome: ");
+                fgets(namePeople, MAX_CHAR, stdin);
+                namePeople[strcspn(namePeople, "\n")] = '\0';
 
                 if (input ("Digite a idade da pessoa: ", "%d", &agePeople) == false)
                     return INPUT_ERROR;
@@ -52,7 +59,7 @@ int main (void)
                 break;
 
             case 2: 
-
+                printf("---------- Pessoas cadastradas ----------\n");
                 if (peoplesCount <= 0)
                 {
                     printf("Nenhuma pessoa foi encontrada!\n");
@@ -67,8 +74,28 @@ int main (void)
                 }
 
                 break;
-
+            
             case 3:
+                
+                printf("---------- Pessoa mais velha ----------\n");
+
+                if (peoplesCount <= 0)
+                {
+                    printf("Nenhuma pessoa foi encontrada!\n");
+                    break;
+                }
+
+                for (int i = 0; i < peoplesCount; i++)
+                {
+                    if (peoples[i].age > peoples[oldestIndex].age)
+                        oldestIndex = i;
+                }
+
+                printf("A pessoa mais velha é: %s, com %i anos\n", peoples[oldestIndex].name, peoples[oldestIndex].age);
+
+                break;
+
+            case 0:
                 break;
             
             default:
@@ -77,7 +104,8 @@ int main (void)
 
         if (option)
         {
-            selectOption(&option);
+            if (selectOption(&option) == false)
+                return INPUT_ERROR;
         }
     }
 
@@ -88,7 +116,8 @@ void showMenu (void)
 {
     printf("---------- MENU ----------\n");
     printf("1 - Cadastrar pessoa\n");
-    printf("2 - Mostrar pessoa\n");
+    printf("2 - Mostrar pessoas\n");
+    printf("3 - Mostrar pessoa mais velha\n");
     printf("0 - Sair\n");
     printf("--------------------------\n");
 }
@@ -130,7 +159,15 @@ bool selectOption (int *option)
 people createPeople (char name[], int age)
 {
     people newPeople;
-    strcpy(newPeople.name, name);
+    strncpy(newPeople.name, name, MAX_CHAR);
+    newPeople.name[MAX_CHAR - 1] = '\0';
+
     newPeople.age = age;
     return newPeople;
+}
+
+void limparBuffer (void)
+{
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
 }
